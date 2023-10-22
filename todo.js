@@ -8,12 +8,16 @@ let displayvalue = [];
 let str= localStorage.getItem("displayvalue");
 let prevdisplayvalue = JSON.parse(str);
 
+if(prevdisplayvalue.length !== 0)
+{
 prevhtml();
+}
 
 function addtodo() {
   let inputText = inputT.value;
   let inputDate = inputD.value;
-  displayvalue = prevdisplayvalue !== undefined ? prevdisplayvalue : [];
+  let prevdisplay = prevdisplayvalue !== undefined ? prevdisplayvalue : [] ;
+  displayvalue = prevdisplay || [] ;
   displayvalue.push({ Text: inputText, Date: inputDate });
   storagefile= JSON.stringify(displayvalue);
   localStorage.setItem("displayvalue",storagefile);
