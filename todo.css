@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    height: 100px;
+    color: rgb(66, 86, 86);
+    background-color: rgba(65, 169, 134, 0.5);
+    border-bottom: 2px solid rgb(225, 224, 224);
+}
+
+.input_container{
+    margin-top: 20px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.todo_input{
+    height: 30px;
+    width: 300px;  
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.todo_date{
+    height: 30px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.todo_btn{
+    height: 30px;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: chartreuse;
+    cursor: pointer;
+}
+
+.output_container{
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 300px 150px 100px;
+    row-gap: 10px;
+    font: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.delete-btn{
+    height: 40px;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: rgb(245, 78, 73);
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+#output-text{
+    margin-left: -5px;
+    border: outset;
+    display: flex;
+    min-height: 40px;
+    min-width: 300px;
+    align-items: center;
+    block-size: fit-content; 
+    width: fit-content;
+}
+
+#output-date{
+    border: outset;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
